@@ -405,38 +405,6 @@ document.addEventListener('keyup', event => {
     }
 });
 
-let currentIndex = 0;
-let showTranslation = false;
-
-function updateWord() {
-    wordElement.textContent = words[currentIndex][0];
-    translateElement.textContent = words[currentIndex][1];
-    translateContainer.style.display = "none";
-}
-
-function toggleTranslation() {
-    if (window.innerWidth <= 768) { // Для телефонів
-        if (!showTranslation) {
-            translateContainer.style.display = "flex";
-            showTranslation = true;
-        } else {
-            currentIndex = (currentIndex + 1) % words.length;
-            updateWord();
-            showTranslation = false;
-        }
-    }
-}
-
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" && window.innerWidth > 768) {
-        currentIndex = (currentIndex + 1) % words.length;
-        updateWord();
-    }
-});
-
-document.addEventListener("click", toggleTranslation);
-
-updateWord();
 
 
 
