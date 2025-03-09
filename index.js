@@ -405,8 +405,7 @@ document.addEventListener('keyup', event => {
     }
 });
 
-element.addEventListener('touchend', event => {
-
+document.addEventListener('touchstart', event => {
     translate.style.display = 'none';
 
     if (wordsArray.length != 0) {
