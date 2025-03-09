@@ -405,6 +405,32 @@ document.addEventListener('keyup', event => {
     }
 });
 
+element.addEventListener('touchstart', event => {
+    if (event.code == 'ontouchend') {
+        translate.style.display = 'none';
+
+        if (wordsArray.length != 0) {
+
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+
+            let randomNum = randomInteger(0, wordsArray.length - 1);
+
+            deleteWord = wordsArray.splice(randomNum, 1)[0];
+
+            ele.textContent = deleteWord[0];
+            ele2.textContent = deleteWord[1];
+
+        } else {
+
+            ele.textContent = 'The end';
+
+            wordsArray = getCloneArr(saveArr);
+        }
+    }
+});
 
 
 
