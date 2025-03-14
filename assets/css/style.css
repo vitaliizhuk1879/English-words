@@ -30,6 +30,10 @@ body {
     cursor: pointer;
 }
 
+.unit_last {
+    margin-bottom: 20px;
+}
+
 .unit:hover {
     border-color: white;
     color: white
@@ -90,7 +94,7 @@ body {
 @media (max-width: 575px) {
     .container {    
         height: auto;
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .unit {
