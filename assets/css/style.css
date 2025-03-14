@@ -97,6 +97,11 @@ body {
         font-size: 20px;
     }
 
+    .unit:hover {
+        border-color: inherit;
+        color: inherit;
+    }
+
     .central_square {
         min-width: 250px;
     }
