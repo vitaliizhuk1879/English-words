@@ -104,12 +104,6 @@ body {
         cursor: pointer;
     }
 
-    .unit:hover {
-        font-size: 20px;
-        border-color: white;
-        color: white
-    }
-
     .central_square {
         min-width: 250px;
     }
