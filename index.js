@@ -378,85 +378,99 @@ let btn13 = document.getElementById('btn13');
 btn.onclick = function (event) {
     wordsArray = unit1People;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn1.onclick = function (event) {
     wordsArray = unit2House;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn2.onclick = function (event) {
     wordsArray = unit3School;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn3.onclick = function (event) {
     wordsArray = unit4Work;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn4.onclick = function (event) {
     wordsArray = unit5FamilyAndSocialLife;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn5.onclick = function (event) {
     wordsArray = unit6Food;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn6.onclick = function (event) {
     wordsArray = unit7ShopingAndServices;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn7.onclick = function (event) {
     wordsArray = unit8Travelling;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn8.onclick = function (event) {
     wordsArray = unit9Art;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn9.onclick = function (event) {
     wordsArray = unit10Sport;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn10.onclick = function (event) {
     wordsArray = unit11Health;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn11.onclick = function (event) {
     wordsArray = unit12Science;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn12.onclick = function (event) {
     wordsArray = unit13Nature;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 btn13.onclick = function (event) {
     wordsArray = unit14Society;
     units.style.display = 'none';
-    central_square.style.display = 'flex'
+    central_square.style.display = 'flex';
+    flag = true;
 }
 
 
@@ -479,7 +493,7 @@ document.addEventListener('keyup', event => {
 
     if (event.code === 'Enter') {
 
-        translate.style.display = 'none';
+        translate.style.opacity = '0';
 
         if (wordsArray.length != 0) {
 
@@ -504,34 +518,41 @@ document.addEventListener('keyup', event => {
     }
 
     if (event.code === "ShiftRight") {
-        translate.style.display = 'flex';
+        translate.style.opacity = 1;
     }
 });
 
-// document.addEventListener('touchstart', event => {
-//     translate.style.display = 'none';
+ele.addEventListener('touchend', event => {
+    if (flag === true) {
 
-//     if (wordsArray.length != 0) {
+        translate.style.opacity = '0';
+    
+        if (wordsArray.length != 0) {
+    
+            function randomInteger(min, max) {
+                let rand = min + Math.random() * (max + 1 - min);
+                return Math.floor(rand);
+            }
+    
+            let randomNum = randomInteger(0, wordsArray.length - 1);
+    
+            deleteWord = wordsArray.splice(randomNum, 1)[0];
+    
+            ele.textContent = deleteWord[0];
+            ele2.textContent = deleteWord[1];
+    
+        } else {
+    
+            ele.textContent = 'The end';
+    
+            wordsArray = getCloneArr(saveArr);
+        }
 
-//         function randomInteger(min, max) {
-//             let rand = min + Math.random() * (max + 1 - min);
-//             return Math.floor(rand);
-//         }
-
-//         let randomNum = randomInteger(0, wordsArray.length - 1);
-
-//         deleteWord = wordsArray.splice(randomNum, 1)[0];
-
-//         ele.textContent = deleteWord[0];
-//         ele2.textContent = deleteWord[1];
-
-//     } else {
-
-//         ele.textContent = 'The end';
-
-//         wordsArray = getCloneArr(saveArr);
-//     }
-// });
+        ele2.addEventListener('touchend', event => {
+            translate.style.opacity = 1;
+        });
+    }
+});
 
 
 
