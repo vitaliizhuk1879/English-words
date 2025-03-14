@@ -88,20 +88,13 @@ body {
 }
 
 @media (max-width: 575px) {
+    .container {    
+        height: auto;
+    }
+
     .unit {
-        display: block;
-        width: 350px;
         min-height: 50px;
-
-        margin-bottom: 10px;
-
-        background-color: inherit;
-        border: 1px solid #4a4d51;
-        border-radius: 7px;
-
-        font-family: "Poppins", sans-serif;
-        color: #cbd0d6;
-        cursor: pointer;
+        font-size: 20px;
     }
 
     .central_square {
