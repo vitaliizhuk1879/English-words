@@ -37,7 +37,7 @@ let unit2House = [
     ['в\'їхати/виїхати', 'move in/out'], ['оновити', 'renovate/do up'], ['проживання', 'accommodation'], ['прибирати, готувати, прасувати, прати', 'do the cleaning/cooking/ironing/washing-up'], ['рахунок за електроенергію/телефон', 'electricity/telephone bill'], ['агент з нерухомості', 'estate agent'],
     ['співмешканець', 'flatmate, housemate'], ['на продаж', 'for sale'], ['житловий масив', 'housing estate'], ['у центрі', 'in the centre'], ['в передмісті', 'in the suburds'], ['орендодавець', 'landlord/landlady'], ['жити на першому поверсі', 'live on the first floor'],
     ['розташований у житловому районі', 'located in a residential area'], ['знизити/збільшити оренду', 'lower/increase the rent'], ['сусід', 'neighbour'], ['на першому поверсі', 'on the ground floor'], ['на околиці', 'on the outskirts'], ['платити (високу/низьку) оренду', 'pay (high/low) rent'],
-    ['оплатити рахунки', 'pay the bills'], ['здати в оренду квартиру/кімнату у когось', 'rent a flat/room from sb'], ['здати в оренду квартиру/кімнату у комусь', 'rent a flat/room to sb'], ['сільський', 'rural'], ['мешкати в одній кімнаті з кимось', 'share a room'], ['виносити сміття', 'take the rubbish out'],
+    ['оплатити рахунки', 'pay the bills'], ['здати в оренду квартиру/кімнату у когось', 'rent a flat/room from sb'], ['здати в оренду квартиру/кімнату комусь', 'rent a flat/room to sb'], ['сільський', 'rural'], ['мешкати в одній кімнаті з кимось', 'share a room'], ['виносити сміття', 'take the rubbish out'],
     ['орендар', 'tenant'], ['міський', 'urban'],
 ];
 
@@ -151,7 +151,7 @@ let unit6Food = [
 ];
 
 
-let unit7Shopingandservices = [
+let unit7ShopingAndServices = [
     ['пекарня', 'baker’s'], ['книгарня', 'bookshop'], ['магазин м’яса', 'butcher’s'], ['аптека', 'chemist’s'], ['магазин одягу', 'clothes shop'], ['магазин на розі', 'corner shop'], ['місцевий', 'local shop'], ['популярний', 'busy shop'], ['з великим вибором товарів', 'well-stocked shop'], ['дорогий', 'expensive shop'], ['ексклюзивний', 'exclusive shop'],
     ['магазин безмитної торгівлі', 'duty-free shop'], ['універмаг', 'department store'], ['будівельний магазин', 'DIY shop'], ['хімчистка', 'dry cleaner’s'], ['магазин електротоварів', 'electrical shop'], ['квітковий магазин', 'florist’s'], ['магазин меблів', 'furniture shop'], ['автомайстерня', 'garage'], ['сувенірний магазин', 'gift shop'], ['магазин овочів та фруктів', 'greengrocer’s'], ['продовольчий магазин', 'grocer’s'],
     ['перукарня', 'hairdresser’s'], ['пральня', 'laundry'], ['ринок', 'market square / marketplace'], ['магазин музичних інструментів', 'music shop'], ['газетний кіоск', 'newsagent’s'], ['оптика', 'optician’s'], ['відкритий ринок', 'outdoor market'], ['зоомагазин', 'pet shop'], ['фотоательє, фотостудія', 'photographer’s'], ['пошта', 'post office'], ['громадські послуги', 'public services'],
@@ -354,7 +354,110 @@ let unit14Society = [
     ['заробляти на життя', 'make a living'], ['зацікавленість', 'active interest'], ['програми підвищення обізнаності', 'awareness raising programmes']
 ];
 
-let wordsArray = unit1People;
+let wordsArray = unit2House;
+
+let central_square = document.getElementById('central_square');
+
+let units = document.getElementById('units')
+
+let btn = document.getElementById('btn');
+let btn1 = document.getElementById('btn1');
+let btn2 = document.getElementById('btn2');
+let btn3 = document.getElementById('btn3');
+let btn4 = document.getElementById('btn4');
+let btn5 = document.getElementById('btn5');
+let btn6 = document.getElementById('btn6');
+let btn7 = document.getElementById('btn7');
+let btn8 = document.getElementById('btn8');
+let btn9 = document.getElementById('btn9');
+let btn10 = document.getElementById('btn10');
+let btn11 = document.getElementById('btn11');
+let btn12 = document.getElementById('btn12');
+let btn13 = document.getElementById('btn13');
+
+btn.onclick = function (event) {
+    wordsArray = unit1People;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn1.onclick = function (event) {
+    wordsArray = unit2House;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn2.onclick = function (event) {
+    wordsArray = unit3School;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn3.onclick = function (event) {
+    wordsArray = unit4Work;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn4.onclick = function (event) {
+    wordsArray = unit5FamilyAndSocialLife;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn5.onclick = function (event) {
+    wordsArray = unit6Food;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn6.onclick = function (event) {
+    wordsArray = unit7ShopingAndServices;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn7.onclick = function (event) {
+    wordsArray = unit8Travelling;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn8.onclick = function (event) {
+    wordsArray = unit9Art;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn9.onclick = function (event) {
+    wordsArray = unit10Sport;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn10.onclick = function (event) {
+    wordsArray = unit11Health;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn11.onclick = function (event) {
+    wordsArray = unit12Science;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn12.onclick = function (event) {
+    wordsArray = unit13Nature;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
+
+btn13.onclick = function (event) {
+    wordsArray = unit14Society;
+    units.style.display = 'none';
+    central_square.style.display = 'flex'
+}
 
 
 
@@ -405,30 +508,30 @@ document.addEventListener('keyup', event => {
     }
 });
 
-document.addEventListener('touchstart', event => {
-    translate.style.display = 'none';
+// document.addEventListener('touchstart', event => {
+//     translate.style.display = 'none';
 
-    if (wordsArray.length != 0) {
+//     if (wordsArray.length != 0) {
 
-        function randomInteger(min, max) {
-            let rand = min + Math.random() * (max + 1 - min);
-            return Math.floor(rand);
-        }
+//         function randomInteger(min, max) {
+//             let rand = min + Math.random() * (max + 1 - min);
+//             return Math.floor(rand);
+//         }
 
-        let randomNum = randomInteger(0, wordsArray.length - 1);
+//         let randomNum = randomInteger(0, wordsArray.length - 1);
 
-        deleteWord = wordsArray.splice(randomNum, 1)[0];
+//         deleteWord = wordsArray.splice(randomNum, 1)[0];
 
-        ele.textContent = deleteWord[0];
-        ele2.textContent = deleteWord[1];
+//         ele.textContent = deleteWord[0];
+//         ele2.textContent = deleteWord[1];
 
-    } else {
+//     } else {
 
-        ele.textContent = 'The end';
+//         ele.textContent = 'The end';
 
-        wordsArray = getCloneArr(saveArr);
-    }
-});
+//         wordsArray = getCloneArr(saveArr);
+//     }
+// });
 
 
 

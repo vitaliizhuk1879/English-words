@@ -12,6 +12,31 @@ body {
     flex-direction: column;
 }
 
+
+/* Units */
+.unit {
+    display: block;
+    width: 350px;
+    min-height: 30px;
+
+    margin-bottom: 10px;
+
+    background-color: inherit;
+    border: 1px solid #4a4d51;
+    border-radius: 7px;
+
+    font-family: "Poppins", sans-serif;
+    color: #cbd0d6;
+    cursor: pointer;
+}
+
+.unit:hover {
+    border-color: white;
+    color: white
+}
+
+
+/* Words */
 .central_square {
     min-width: 500px;
     height: 100px;
@@ -23,7 +48,7 @@ body {
 
     border-bottom: 2px solid #4a4d51;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
