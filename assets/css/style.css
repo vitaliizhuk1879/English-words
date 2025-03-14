@@ -67,10 +67,9 @@ body {
 
 .central_square2 {
     display: none;
-    top: 100px;
 
     min-width: 500px;
-    height: 100px;
+    min-height: 100px;
 
     padding: 0 25px;
 
