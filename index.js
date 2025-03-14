@@ -375,11 +375,13 @@ let btn11 = document.getElementById('btn11');
 let btn12 = document.getElementById('btn12');
 let btn13 = document.getElementById('btn13');
 
+
 btn.onclick = function (event) {
     wordsArray = unit1People;
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn1.onclick = function (event) {
@@ -387,6 +389,7 @@ btn1.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn2.onclick = function (event) {
@@ -394,6 +397,7 @@ btn2.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn3.onclick = function (event) {
@@ -401,6 +405,7 @@ btn3.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn4.onclick = function (event) {
@@ -408,6 +413,7 @@ btn4.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn5.onclick = function (event) {
@@ -415,6 +421,7 @@ btn5.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn6.onclick = function (event) {
@@ -422,6 +429,7 @@ btn6.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn7.onclick = function (event) {
@@ -429,6 +437,7 @@ btn7.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn8.onclick = function (event) {
@@ -436,6 +445,7 @@ btn8.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn9.onclick = function (event) {
@@ -443,6 +453,7 @@ btn9.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn10.onclick = function (event) {
@@ -450,6 +461,7 @@ btn10.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn11.onclick = function (event) {
@@ -457,6 +469,7 @@ btn11.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn12.onclick = function (event) {
@@ -464,6 +477,7 @@ btn12.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 btn13.onclick = function (event) {
@@ -471,6 +485,7 @@ btn13.onclick = function (event) {
     units.style.display = 'none';
     central_square.style.display = 'flex';
     flag = true;
+    translate.style.display = 'block';
 }
 
 
@@ -521,6 +536,7 @@ document.addEventListener('keyup', event => {
         translate.style.opacity = 1;
     }
 });
+
 
 ele.addEventListener('touchend', event => {
     if (flag === true) {
