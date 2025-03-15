@@ -358,7 +358,9 @@ let wordsArray = unit2House;
 
 let central_square = document.getElementById('central_square');
 
-let units = document.getElementById('units')
+let units = document.getElementById('units');
+
+let container = document.getElementById('container');
 
 let btn = document.getElementById('btn');
 let btn1 = document.getElementById('btn1');
@@ -382,6 +384,7 @@ btn.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn1.onclick = function (event) {
@@ -390,6 +393,7 @@ btn1.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn2.onclick = function (event) {
@@ -398,6 +402,7 @@ btn2.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn3.onclick = function (event) {
@@ -406,6 +411,7 @@ btn3.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn4.onclick = function (event) {
@@ -414,6 +420,7 @@ btn4.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn5.onclick = function (event) {
@@ -422,6 +429,7 @@ btn5.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn6.onclick = function (event) {
@@ -430,6 +438,7 @@ btn6.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn7.onclick = function (event) {
@@ -438,6 +447,7 @@ btn7.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn8.onclick = function (event) {
@@ -446,6 +456,7 @@ btn8.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn9.onclick = function (event) {
@@ -454,6 +465,7 @@ btn9.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn10.onclick = function (event) {
@@ -462,6 +474,7 @@ btn10.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn11.onclick = function (event) {
@@ -470,6 +483,7 @@ btn11.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn12.onclick = function (event) {
@@ -478,6 +492,7 @@ btn12.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 btn13.onclick = function (event) {
@@ -486,6 +501,7 @@ btn13.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
+    container.style.height = '100vh';
 }
 
 
