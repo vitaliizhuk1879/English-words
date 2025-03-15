@@ -385,6 +385,7 @@ btn.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn1.onclick = function (event) {
@@ -394,6 +395,7 @@ btn1.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn2.onclick = function (event) {
@@ -403,6 +405,7 @@ btn2.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn3.onclick = function (event) {
@@ -412,6 +415,7 @@ btn3.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn4.onclick = function (event) {
@@ -421,6 +425,7 @@ btn4.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn5.onclick = function (event) {
@@ -430,6 +435,7 @@ btn5.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn6.onclick = function (event) {
@@ -439,6 +445,7 @@ btn6.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn7.onclick = function (event) {
@@ -448,6 +455,7 @@ btn7.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn8.onclick = function (event) {
@@ -457,6 +465,7 @@ btn8.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn9.onclick = function (event) {
@@ -466,6 +475,7 @@ btn9.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn10.onclick = function (event) {
@@ -475,6 +485,7 @@ btn10.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn11.onclick = function (event) {
@@ -484,6 +495,7 @@ btn11.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn12.onclick = function (event) {
@@ -493,6 +505,7 @@ btn12.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 btn13.onclick = function (event) {
@@ -502,6 +515,7 @@ btn13.onclick = function (event) {
     flag = true;
     translate.style.display = 'block';
     container.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
 }
 
 
