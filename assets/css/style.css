@@ -105,6 +105,12 @@ body {
 
     .central_square {
         min-width: 250px;
+        max-width: 370px;
+    }
+
+    .central_square2 {
+        min-width: 250px;
+        max-width: 370px;
     }
 
     .text {
