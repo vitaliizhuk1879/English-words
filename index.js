@@ -384,7 +384,7 @@ btn.onclick = function (event) {
     central_square.style.display = 'flex';
     flag = true;
     translate.style.display = 'block';
-    container.style.height = '100vh';
+    container.style.height = '90vh';
 }
 
 btn1.onclick = function (event) {
